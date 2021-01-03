@@ -1,6 +1,11 @@
 package com.timkoerner.homeautomation;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 
@@ -16,6 +21,13 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setSupportActionBar(binding.toolbar);
         setContentView(binding.getRoot());
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment = fragmentManager.findFragmentByTag("tag");
+        NavController controller = NavHostFragment.findNavController(fragment);
+        NavigationUI.setupWithNavController(binding.toolbar, controller, binding.drawerLayout);
+        NavigationUI.setupWithNavController(binding.navigationView, controller);
     }
 }

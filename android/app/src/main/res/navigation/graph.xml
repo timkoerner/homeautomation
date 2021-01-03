@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/windowFragment">
+
+    <fragment
+        android:id="@+id/windowFragment"
+        android:name="com.timkoerner.homeautomation.WindowFragment"
+        android:label="window_fragment"
+        tools:layout="@layout/window_fragment" />
+</navigation>
