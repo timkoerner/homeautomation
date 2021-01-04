@@ -1,0 +1,273 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AVR-ISP-6 J1
+U 1 1 5F9EB97E
+P 2750 2250
+F 0 "J1" H 2421 2346 50  0000 R CNN
+F 1 "AVR-ISP-6" H 2421 2255 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 2500 2300 50  0001 C CNN
+F 3 " ~" H 1475 1700 50  0001 C CNN
+	1    2750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-10 J2
+U 1 1 5F9ED1CA
+P 2750 3700
+F 0 "J2" H 2420 3796 50  0000 R CNN
+F 1 "AVR-ISP-10" H 2420 3705 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" V 2500 3750 50  0001 C CNN
+F 3 " ~" H 1475 3150 50  0001 C CNN
+	1    2750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313-20PU U1
+U 1 1 5F9F17C2
+P 4950 2900
+F 0 "U1" H 5300 4100 50  0000 C CNN
+F 1 "ATtiny2313-20PU" H 5300 4000 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 4950 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 4950 2900 50  0001 C CNN
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2350 3750 2350
+Wire Wire Line
+	3750 2350 3750 2100
+Wire Wire Line
+	3750 2100 4350 2100
+Wire Wire Line
+	3150 3800 3750 3800
+Wire Wire Line
+	3750 3800 3750 2350
+Connection ~ 3750 2350
+Wire Wire Line
+	2650 1250 4950 1250
+Wire Wire Line
+	2650 1250 2650 1750
+Wire Wire Line
+	2650 3000 1850 3000
+Wire Wire Line
+	1850 3000 1850 1250
+Wire Wire Line
+	1850 1250 2650 1250
+Connection ~ 2650 1250
+Wire Wire Line
+	2650 3000 2650 3200
+Wire Wire Line
+	2650 4100 2650 4400
+Wire Wire Line
+	2650 4400 4950 4400
+Wire Wire Line
+	4950 4400 4950 4000
+Wire Wire Line
+	2650 4400 2250 4400
+Wire Wire Line
+	2250 4400 2250 2650
+Wire Wire Line
+	2250 2650 2650 2650
+Connection ~ 2650 4400
+Wire Wire Line
+	5550 2800 5950 2800
+Wire Wire Line
+	5950 2800 5950 1350
+Wire Wire Line
+	5950 1350 3450 1350
+Wire Wire Line
+	3450 1350 3450 2250
+Wire Wire Line
+	3450 2250 3150 2250
+Wire Wire Line
+	3450 2250 3450 3700
+Wire Wire Line
+	3450 3700 3150 3700
+Connection ~ 3450 2250
+Wire Wire Line
+	5550 2700 5850 2700
+Wire Wire Line
+	5850 2700 5850 1450
+Wire Wire Line
+	5850 1450 3550 1450
+Wire Wire Line
+	3550 1450 3550 2050
+Wire Wire Line
+	3550 2050 3150 2050
+Wire Wire Line
+	3550 2050 3550 3500
+Wire Wire Line
+	3550 3500 3150 3500
+Connection ~ 3550 2050
+Wire Wire Line
+	5550 2600 5750 2600
+Wire Wire Line
+	3650 2150 3150 2150
+Wire Wire Line
+	3650 2150 3650 3600
+Wire Wire Line
+	3650 3600 3150 3600
+Connection ~ 3650 2150
+Wire Wire Line
+	3650 1550 3650 2150
+Wire Wire Line
+	5750 1550 5750 2600
+Wire Wire Line
+	3650 1550 5750 1550
+Wire Wire Line
+	4950 1250 4950 1800
+Wire Wire Line
+	4950 1250 7100 1250
+Connection ~ 4950 1250
+Wire Wire Line
+	5950 2800 7200 2800
+Connection ~ 5950 2800
+Wire Wire Line
+	5850 2700 7200 2700
+Connection ~ 5850 2700
+Wire Wire Line
+	5750 2600 7200 2600
+Connection ~ 5750 2600
+Wire Wire Line
+	5550 2500 7200 2500
+Wire Wire Line
+	5550 2400 7200 2400
+Wire Wire Line
+	5550 2300 7200 2300
+Wire Wire Line
+	7100 2900 7200 2900
+Wire Wire Line
+	7100 1250 7100 2900
+Wire Wire Line
+	5550 3600 6050 3600
+Wire Wire Line
+	6050 3600 6050 2000
+Wire Wire Line
+	6050 2000 7200 2000
+Wire Wire Line
+	5550 2200 7200 2200
+Wire Wire Line
+	7200 2100 5550 2100
+Wire Wire Line
+	5550 3000 6750 3000
+Wire Wire Line
+	6750 3100 5550 3100
+Wire Wire Line
+	3750 2100 3750 1650
+Wire Wire Line
+	3750 1650 5650 1650
+Wire Wire Line
+	5650 1650 5650 2900
+Wire Wire Line
+	5650 2900 6750 2900
+Connection ~ 3750 2100
+Wire Wire Line
+	6750 3200 6450 3200
+Wire Wire Line
+	6450 3200 6450 4100
+Wire Wire Line
+	4250 4100 4250 2500
+Wire Wire Line
+	4250 2500 4350 2500
+Wire Wire Line
+	4250 4100 6450 4100
+Wire Wire Line
+	6750 3300 6550 3300
+Wire Wire Line
+	6550 3300 6550 4200
+Wire Wire Line
+	6550 4200 4150 4200
+Wire Wire Line
+	4150 4200 4150 2300
+Wire Wire Line
+	4150 2300 4350 2300
+Wire Wire Line
+	6750 3400 6350 3400
+Wire Wire Line
+	6350 3400 6350 3200
+Wire Wire Line
+	6350 3200 5550 3200
+Wire Wire Line
+	6750 3500 6250 3500
+Wire Wire Line
+	6250 3500 6250 3300
+Wire Wire Line
+	6250 3300 5550 3300
+Wire Wire Line
+	4950 4400 6650 4400
+Wire Wire Line
+	6650 4400 6650 3800
+Wire Wire Line
+	6650 3800 6750 3800
+Connection ~ 4950 4400
+Wire Wire Line
+	6750 3700 5650 3700
+Wire Wire Line
+	5650 3700 5650 3500
+Wire Wire Line
+	5650 3500 5550 3500
+Wire Wire Line
+	6750 3600 6150 3600
+Wire Wire Line
+	6150 3600 6150 3400
+Wire Wire Line
+	6150 3400 5550 3400
+$Comp
+L Device:C C1
+U 1 1 5FA7DA07
+P 8650 2950
+F 0 "C1" H 8765 2996 50  0000 L CNN
+F 1 "100nF" H 8765 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 8688 2800 50  0001 C CNN
+F 3 "~" H 8650 2950 50  0001 C CNN
+	1    8650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1250 8650 1250
+Wire Wire Line
+	8650 1250 8650 2800
+Connection ~ 7100 1250
+Wire Wire Line
+	6650 4400 8650 4400
+Wire Wire Line
+	8650 4400 8650 3100
+Connection ~ 6650 4400
+NoConn ~ 6950 4000
+$Comp
+L Connector_Generic:Conn_01x10 PB1
+U 1 1 5FA935EE
+P 7400 2400
+F 0 "PB1" H 7480 2392 50  0000 L CNN
+F 1 "Conn_01x10" H 7480 2301 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 7400 2400 50  0001 C CNN
+F 3 "~" H 7400 2400 50  0001 C CNN
+	1    7400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 PD1
+U 1 1 5FA95298
+P 6950 3300
+F 0 "PD1" H 7030 3292 50  0000 L CNN
+F 1 "Conn_01x10" H 7030 3201 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 6950 3300 50  0001 C CNN
+F 3 "~" H 6950 3300 50  0001 C CNN
+	1    6950 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
