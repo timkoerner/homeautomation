@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.timkoerner.homeautomation.databinding.WindowFragmentBinding;
@@ -35,6 +37,15 @@ public class WindowFragment extends Fragment
         super.onActivityCreated(savedInstanceState);
         ViewModelProvider provider = new ViewModelProvider(this);
         viewModel = provider.get(WindowViewModel.class);
+        LiveData<String> text = viewModel.getText();
+        text.observe(getViewLifecycleOwner(), new Observer<String>()
+        {
+            @Override
+            public void onChanged(String string)
+            {
+                binding.textView.setText(string);
+            }
+        });
     }
 
     @Override
