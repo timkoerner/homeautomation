@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/windowFragment"
-        android:name="com.timkoerner.homeautomation.WindowFragment"
+        android:name="com.timkoerner.homeautomation.window.WindowFragment"
         android:label="window_fragment"
         tools:layout="@layout/window_fragment" />
 </navigation>
